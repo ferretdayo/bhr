@@ -6,12 +6,8 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>
-          <router-link to="/">Main</router-link>
-        </v-btn>
-        <v-btn flat>
-          <router-link to="/about">About</router-link>
-        </v-btn>
+        <v-btn to="/" flat>Main</v-btn>
+        <v-btn to="/about" flat>About</v-btn>
       </v-toolbar-items>
     </v-toolbar>
 
