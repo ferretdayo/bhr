@@ -48,7 +48,7 @@
     ],
     "rules": {
       "semi": ["off"],
-      "quotes": ["error", "single", { "allowTemplateLiterals": true }]
+      "quotes": ["single"]
     },
     "parserOptions": {
       "parser": "babel-eslint"
