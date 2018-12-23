@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  // prettierのシングルクオーテーションオプションをon
+  "prettier.singleQuote": true
+}
