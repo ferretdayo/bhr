@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-layout text-xs-center wrap>{{message}} {{text}}</v-layout>
+    <v-layout text-xs-center wrap>{{ message }} {{ text }}</v-layout>
   </v-container>
 </template>
 
