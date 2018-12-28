@@ -27,12 +27,24 @@ export default new Router({
       component: Data
     },
     {
+      path: "/documents/html",
+      component: () => import("./views/documents/Html.vue"),
+    },
+    {
       path: "/documents/function",
       component: () => import("./views/documents/Function.vue"),
     },
     {
       path: "/documents/event",
       component: () => import("./views/documents/EventHandler.vue"),
+    },
+    {
+      path: "/documents/api",
+      component: () => import("./views/documents/Api.vue"),
+    },
+    {
+      path: "/documents/advance",
+      component: () => import("./views/documents/Advance.vue"),
     }
   ]
 });

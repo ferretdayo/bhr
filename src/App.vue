@@ -35,8 +35,11 @@ export default {
     return {
       items: [
         { label: "データの操作", link: "/documents/data" },
+        { label: "HTML関連", link: "/documents/html" },
         { label: "関数", link: "/documents/function" },
-        { label: "イベントハンドラ", link: "/documents/event" }
+        { label: "イベントハンドラ", link: "/documents/event" },
+        { label: "API操作", link: "/documents/api" },
+        { label: "応用", link: "/documents/advance" }
       ]
     };
   }
