@@ -1,10 +1,10 @@
 <template>
   <v-app light>
     <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
+      <v-toolbar-title class="headline text-uppercase" to="/">
         <span>BHRのプログラミング勉強</span>
       </v-toolbar-title>
-      <v-menu :nudge-width="100" style="margin-left: 10px">
+      <v-menu :nudge-width="100" style="margin-left: 40px">
         <v-toolbar-title slot="activator">
           <span>サンプルプログラム集</span>
           <v-icon light>arrow_drop_down</v-icon>
@@ -17,8 +17,8 @@
       </v-menu>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn to="/" flat>Main</v-btn>
-        <v-btn to="/about" flat>About</v-btn>
+        <v-btn to="/" flat>トップページ</v-btn>
+        <!-- <v-btn to="/about" flat>About</v-btn> -->
       </v-toolbar-items>
     </v-toolbar>
 
@@ -34,12 +34,12 @@ export default {
   data() {
     return {
       items: [
-        { label: "データの操作", link: "/documents/data" },
-        { label: "HTML関連", link: "/documents/html" },
-        { label: "関数", link: "/documents/function" },
-        { label: "イベントハンドラ", link: "/documents/event" },
-        { label: "API操作", link: "/documents/api" },
-        { label: "応用", link: "/documents/advance" }
+        { label: "1. データの操作", link: "/documents/data" },
+        { label: "2. HTML関連", link: "/documents/html" },
+        { label: "3. 関数", link: "/documents/function" },
+        { label: "4. イベントハンドラ", link: "/documents/event" },
+        { label: "5. API操作", link: "/documents/api" },
+        { label: "6. 応用", link: "/documents/advance" }
       ]
     };
   }
