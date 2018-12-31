@@ -1,6 +1,6 @@
 <template>
   <div class="html">
-    <h1>HTMLとの連携方法</h1>
+    <h1>HTMLを利用した操作</h1>
     <h2>if文を利用する</h2>
     <div v-if="true">trueです</div>
 
@@ -17,6 +17,10 @@
     <ul>
       <li v-for="item in items" :key="item.key">{{item.label}}</li>
     </ul>
+
+    <h2>双方向バインディング</h2>
+    <v-text-field v-model="text" style="width: 50vw"></v-text-field>
+    {{ text }}
   </div>
 </template>
 
@@ -29,7 +33,8 @@ export default {
       { key: 1, label: "堀田" },
       { key: 2, label: "大川" },
       { key: 3, label: "鶴田" }
-    ]
+    ],
+    text: ""
   })
 };
 </script>

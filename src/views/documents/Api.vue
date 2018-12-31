@@ -1,20 +1,29 @@
 <template>
   <div class="api">
     <h1>APIの利用</h1>
-    <h2>API</h2>
+    <h2>APIを利用する - 都道府県の取得 -</h2>
+    <ul v-for="prefecture in prefectures" :key="prefecture">
+      <li>code: {{prefecture.prefCode}} - name: {{prefecture.prefName}}</li>
+    </ul>
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
+  async mounted() {
+    const response = await axios.get(
+      "https://opendata.resas-portal.go.jp/api/v1/prefectures",
+      {
+        headers: {
+          "X-API-KEY": "igDIvsWS3g9gQtO43BbUvCs6df4O2mzZy5emV8on"
+        }
+      }
+    );
+    this.prefectures = response.data.result || [];
+  },
   data: () => ({
-    number: 2,
-    list: ["飲み会", "野球", "飲み会", "テニス"],
-    items: [
-      { key: 1, label: "堀田" },
-      { key: 2, label: "大川" },
-      { key: 3, label: "鶴田" }
-    ]
+    prefectures: []
   })
 };
 </script>
