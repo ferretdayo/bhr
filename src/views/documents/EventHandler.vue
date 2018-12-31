@@ -1,6 +1,6 @@
 <template>
   <div class="event_handler">
-    <h1>ボタンが押された時の動作</h1>
+    <h1>イベントハンドラ</h1>
 
     <h2>アラートを出す</h2>
     <v-btn @click="alert">押すとアラートが出ます</v-btn>
